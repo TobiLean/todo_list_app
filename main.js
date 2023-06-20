@@ -16,7 +16,7 @@ const form = document.querySelector('.js-form');
 
 form.addEventListener('submit', event => {
     event.preventDefault();
-    const input = document.querySelector('js-todo-input');
+    const input = document.getElementsByClassName('js-todo-input')[0];
 
     const text = input.value.trim();
     
@@ -26,3 +26,5 @@ form.addEventListener('submit', event => {
         input.focus();
     }
 })
+
+
